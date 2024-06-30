@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './Employee.css';
 
 function Employee() {
     const [employee, setEmployee] = useState([])
@@ -21,8 +22,9 @@ function Employee() {
     }
 
   return (
-    <div className='d-flex vh-100 bg-primary justify-content-center  align-items-center'>
+    <div className='d-flex vh-100 bg-secondary justify-content-center  align-items-center'>
         <div className='w-75 p-5 bg-white rounded'>
+                <div className='head-d'><h1>Employees List</h1></div>
             <Link to="/create" className='btn btn-success p-2'>Add + </Link>
             <table className='table'>
                 <thead>
